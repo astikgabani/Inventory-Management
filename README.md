@@ -1,13 +1,13 @@
 # Inventory Management
 
 ### APP Info
-####Types of Employees
+Types of Employees
 * Inventory Manager
 * Quality Check Person
 * Sales Manager
 * IT Admin (Super User)
 
-####Permissions
+Permissions
 * Quality Check Person and IT Admin can approve the Quality details of Inventory
 * All these employees can CRUD the Inventory
 * IT Admin can CRUD the whole employees
