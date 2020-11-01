@@ -16,7 +16,7 @@ class InventoryModelView(viewsets.ModelViewSet):
     search_fields = ('description', 'title', 'category',)
 
     def get_serializer_class(self):
-        if self.request.user.type not in {EmployeeType.QUALITY_CHECK_PERSON, EmployeeType.IT_ADMIN}:
+        if self.request.user.type in {EmployeeType.QUALITY_CHECK_PERSON.value, EmployeeType.IT_ADMIN.value}:
             return serializers.InventoryQASerializer
         return serializers.InventorySerializer
 
